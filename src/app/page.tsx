@@ -2,6 +2,7 @@ import ImageComponent from "./components/ImageComponent";
 import LeftSection from "./components/LeftSection";
 import styled from "styled-components";
 import Head from "next/head";
+import { Metadata } from "next";
 import { Container, BoxImage } from "./styles";
 export const metadata: Metadata = {
   title: "Viagem de Chihiro",

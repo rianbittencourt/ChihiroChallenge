@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 import StyledComponentsRegistry from "./registry";
 
-
 const inter = Archivo({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -16,7 +15,7 @@ const Container = styled.div`
   display: relative;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 `;
 
 const tema = {

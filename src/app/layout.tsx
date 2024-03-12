@@ -1,12 +1,12 @@
 "use client";
-import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import Header from "./components/header";
 import "./globals.css";
 import styled from "styled-components";
-import LeftSection from "./components/LeftSection";
 import { ThemeProvider } from "styled-components";
 import StyledComponentsRegistry from "./registry";
+
+
 const inter = Archivo({
   weight: ["400", "700"],
   subsets: ["latin"],

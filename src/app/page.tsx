@@ -7,7 +7,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
   }
@@ -22,7 +22,7 @@ const BoxImage = styled.div`
   margin-right: 40px;
   margin-top: 100px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     margin-right: 0px;
     margin-top: 50px;
     width: 400px;

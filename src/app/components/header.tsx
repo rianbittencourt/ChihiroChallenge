@@ -15,7 +15,7 @@ const TagHeader = styled.header`
   padding: 48px 0px;
 
   margin: 0 auto;
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     justify-content: center;
   }
 
@@ -29,7 +29,7 @@ const Menu = styled.ul`
   gap: 25px;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     display: none;
   }
 `;
@@ -47,7 +47,7 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GoogleLogo/>
+          <GoogleLogo />
         </a>
         <a
           href="https://www.facebook.com/StudioGhibliBrasil/"
@@ -63,7 +63,11 @@ export default function Header() {
         >
           <TwitterLogo />
         </a>
-        <a href="https://www.instagram.com/ghibliusa/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/ghibliusa/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <InstagramLogo />
         </a>
       </Menu>

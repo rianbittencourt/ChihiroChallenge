@@ -1,6 +1,7 @@
 "use client";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import "../globals.css";
+import PlayIcon from "../images/PlayIcon";
 
 const Container = styled.div`
   display: flex;
@@ -10,6 +11,15 @@ const Container = styled.div`
   margin-top: 100px;
 
   @media (max-width: 1200px) {
+    padding: 0px 2vw;
+  }
+  @media (max-width: 1000px) {
+    order: 2;
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px 15vw;
+  }
+  @media (max-width: 768px) {
     order: 2;
     margin-top: 0px;
     max-width: 100%;
@@ -63,14 +73,19 @@ const Paragrafe = styled.p`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   border-radius: ${(props) => props.theme.borderRadius};
-  padding: 14px 32px;
+  text-decoration: none;
+  padding: 14px 0px;
   font-family: Roboto;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
   width: 100%;
 
   background-color: ${(props) =>
@@ -81,14 +96,31 @@ const Button = styled.button`
     props.type === "Secundary"
       ? `2px solid ${props.theme.primaryColor}`
       : "none"};
-`;
 
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+
+  &:hover {
+    background-color: ${(props) =>
+      props.type === "Secundary"
+        ? props.theme.primaryColor
+        : props.theme.primaryColor};
+    color: ${(props) =>
+      props.type === "Secundary"
+        ? props.theme.darkColor
+        : props.theme.darkColor};
+    opacity: ${(props) => (props.type === "Secundary" ? 1 : 0.7)};
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+`;
 const BoxButtons = styled.div`
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     flex-direction: column;
     gap: 20px;
   }
@@ -106,8 +138,20 @@ export default function LeftSection() {
         desobedecem são transformados em animais.
       </Paragrafe>
       <BoxButtons>
-        <Button>ASSISTIR AGORA</Button>
-        <Button type="Secundary">ASSISTA O TRAILER</Button>
+        <Button
+          href="https://www.netflix.com/br/title/60023642"
+          target="_blank"
+        >
+          <PlayIcon />
+          ASSISTIR AGORA
+        </Button>
+        <Button
+          type="Secundary"
+          href="https://www.youtube.com/watch?v=ByXuk9QqQkk"
+          target="_blank"
+        >
+          ASSISTA O TRAILER
+        </Button>
       </BoxButtons>
     </Container>
   );

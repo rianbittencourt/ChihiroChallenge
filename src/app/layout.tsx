@@ -15,7 +15,7 @@ const Container = styled.div`
   display: relative;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
 `;
 
 const tema = {

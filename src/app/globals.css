@@ -12,7 +12,6 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
   background-image: url("./images/background.png?v=1");
   background-repeat: no-repeat;

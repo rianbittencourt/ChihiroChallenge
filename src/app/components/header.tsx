@@ -13,8 +13,8 @@ const TagHeader = styled.header`
 
   justify-content: space-between;
   padding: 48px 0px;
-
   margin: 0 auto;
+  
   @media (max-width: 480px) {
     justify-content: center;
   }

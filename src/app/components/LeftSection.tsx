@@ -11,19 +11,16 @@ const Container = styled.div`
   margin-top: 100px;
 
   @media (max-width: 1200px) {
-    padding: 0px 2vw;
+    padding: 0px 2rem;
   }
   @media (max-width: 1000px) {
     order: 2;
     margin-top: 0px;
     max-width: 100%;
-    padding: 0px 15vw;
+    padding: 0px 5rem;
   }
   @media (max-width: 768px) {
-    order: 2;
-    margin-top: 0px;
-    max-width: 100%;
-    padding: 0px 5vw;
+    padding: 0px 3rem;
   }
 `;
 

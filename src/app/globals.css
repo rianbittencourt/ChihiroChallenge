@@ -2,7 +2,7 @@
   --border-radius: 12px;
   --primary-color: #f1a5b1;
   --dark-color: #0b0a0a;
-  --light-color: #ffffff;
+  --light-color: hsl(0, 0%, 100%);
 }
 * {
   box-sizing: border-box;

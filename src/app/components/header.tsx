@@ -47,7 +47,7 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GoogleLogo alt="Logo Google" />
+          <GoogleLogo/>
         </a>
         <a
           href="https://www.facebook.com/StudioGhibliBrasil/"

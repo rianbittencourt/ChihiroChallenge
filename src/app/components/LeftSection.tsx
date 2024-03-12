@@ -8,6 +8,13 @@ const Container = styled.div`
   text-align: left;
   max-width: 500px;
   margin-top: 100px;
+
+  @media (max-width: 1200px) {
+    order: 2;
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px 5vw;
+  }
 `;
 
 const SecundaryTittle = styled.h2`
@@ -16,19 +23,32 @@ const SecundaryTittle = styled.h2`
   font-weight: 700;
   line-height: 27px;
   color: ${(props) => props.theme.lightColor};
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
 `;
 
 const PrimaryTittle = styled.h1`
   font-family: Andada Pro;
   font-size: 64px;
   font-weight: 800;
-  line-height: 70px;
+
   color: ${(props) => props.theme.lightColor};
   margin-top: 10px;
+  @media (max-width: 768px) {
+    font-family: Andada Pro;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 `;
 
 const BoxTittle = styled.div`
   max-width: 400px;
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
 `;
 
 const Paragrafe = styled.p`
@@ -37,6 +57,10 @@ const Paragrafe = styled.p`
   line-height: 36px;
   color: ${(props) => props.theme.lightColor};
   margin-top: 32px;
+  @media (max-width: 1200px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 const Button = styled.button`
@@ -64,6 +88,10 @@ const BoxButtons = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export default function LeftSection() {

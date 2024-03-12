@@ -16,4 +16,5 @@ body {
   overflow-x: hidden;
   background-image: url("./images/background.png?v=1");
   background-repeat: no-repeat;
+  background-size: cover;
 }

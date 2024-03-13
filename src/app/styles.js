@@ -18,10 +18,7 @@ export const BoxImage = styled.div`
   order: 1;
   width: 500px;
 
-  margin-right: 40px;
-
   @media (max-width: 1000px) {
-    margin-right: 0px;
     margin-top: 50px;
     width: 400px;
   }

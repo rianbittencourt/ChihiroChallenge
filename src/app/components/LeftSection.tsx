@@ -11,7 +11,7 @@ const Container = styled.div`
   margin-bottom: 100px;
 
   @media (max-width: 1200px) {
-    padding: 0px 2rem;
+    padding: 0px 15px;
   }
   @media (max-width: 1000px) {
     order: 2;
@@ -20,7 +20,7 @@ const Container = styled.div`
     padding: 0px 5rem;
   }
   @media (max-width: 768px) {
-    padding: 0px 3rem;
+    padding: 0px 5px;
   }
 `;
 

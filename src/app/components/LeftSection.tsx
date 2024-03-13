@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   text-align: left;
   max-width: 500px;
-  margin-top: 100px;
+  margin-bottom: 100px;
 
   @media (max-width: 1200px) {
     padding: 0px 2rem;

@@ -12,10 +12,14 @@ const inter = Archivo({
 });
 
 const Container = styled.div`
-  display: relative;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 100px);
+}
 `;
 
 const tema = {
@@ -35,10 +39,8 @@ export default function RootLayout({
       <StyledComponentsRegistry>
         <ThemeProvider theme={tema}>
           <body className={inter.className}>
-            <Container>
-              <Header></Header>
-              {children}
-            </Container>
+            <Header />
+            <Container>{children}</Container>
           </body>
         </ThemeProvider>
       </StyledComponentsRegistry>

@@ -4,6 +4,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
+
+  width: 100%;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -14,11 +17,8 @@ export const Container = styled.div`
 export const BoxImage = styled.div`
   order: 1;
   width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   margin-right: 40px;
-  margin-top: 100px;
 
   @media (max-width: 1000px) {
     margin-right: 0px;

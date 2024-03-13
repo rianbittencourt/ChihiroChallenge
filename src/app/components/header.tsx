@@ -10,17 +10,17 @@ import InstagramLogo from "../images/InstagramLogo";
 const TagHeader = styled.header`
   display: flex;
   align-items: center;
-
+  max-width: 1440px;
   justify-content: space-between;
-  padding: 48px 0px;
   margin: 0 auto;
-  
+  margin-top: 10px;
+
   @media (max-width: 480px) {
     justify-content: center;
   }
 
-  @media (max-width: 1200px) {
-    padding: 48px 20px;
+  @media (max-width: 1440px) {
+    padding: 0px 15px;
   }
 `;
 

@@ -15,10 +15,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
       <Container>
+        {" "}
         <LeftSection></LeftSection>
         <BoxImage>
           <ImageComponent src="/RightImage.png" alt="Imagem Fantasmas" />
